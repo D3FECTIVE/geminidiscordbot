@@ -34,8 +34,6 @@ client.on('message', message =>{
         client.commands.get('creator').execute(message, args);
     } else if (command == 'say'){
         client.commands.get('say').execute(message, args);
-    } else if (command == 'marco'){
-        client.commands.get('marco').execute(message, args);
     } else if (command == 'rules'){
         client.commands.get('rules').execute(message, args);
     } else if (command == 'invite'){

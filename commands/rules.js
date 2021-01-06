@@ -4,6 +4,8 @@ module.exports = {
     name: 'rules',
     description: "This displays the server rules!",
     execute(message, args){
+        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You're not authorized to use this command!")
+        
         const RulesEmbed = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Server Rules!__**')
