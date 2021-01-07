@@ -23,7 +23,7 @@ client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Gamer')
 
     guildMember.roles.add(welcomeRole);
-    guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMIИI discord server, <@${guildMember.user.id}>!**`)
+    guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**`)
 });
 
 client.on('message', message =>{
