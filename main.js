@@ -15,9 +15,15 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
 
-
 client.once('ready', () => {
     console.log('Gemini is online!');
+});
+
+client.on('guildMemberAdd', guildMember =>{
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Gamer')
+
+    guildMember.roles.add(welcomeRole);
+    guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMIИI discord server, <@${guildMember.user.id}>!**`)
 });
 
 client.on('message', message =>{
