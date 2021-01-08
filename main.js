@@ -54,7 +54,9 @@ client.on('message', message =>{
         client.commands.get('mute').execute(message, args);
     } else if (command === 'unmute'){
         client.commands.get('unmute').execute(message, args);
-    } 
+    } else if (command === 'realm'){
+        client.commands.get('realm').execute(message, args);
+    }
 })
 
 client.login(process.env.token);
