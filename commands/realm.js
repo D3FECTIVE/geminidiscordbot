@@ -11,7 +11,7 @@ module.exports = {
                 .setTitle('**Realm Cordinates**')
                 .setDescription('Test');
 
-            guildMember.guild.channels.cache.get('769358566141198366').send(RealmsEmbed);
+            channels.cache.get('769358566141198366').send(RealmsEmbed);
 
         } else {
             message.channel.send('You are not an authorized member of the Project GEMINI Realm!');
