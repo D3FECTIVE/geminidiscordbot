@@ -8,8 +8,8 @@ module.exports = {
 
             const RealmsEmbed = new Discord.MessageEmbed()
                 .setColor('#00d0ff')
-                .setTitle('Realm Cordinates')
-                .setDescription('**Main Landmarks**\n```Strong Hold | -1900 ~ -100```\n\n\n**Player Homes**\n```The Rice Farm | -555 ~ -527\n```\n\n\n**Kingdoms**\n```Elysium | -804 ~ -465\n```\n\n***Last Updated: 01-07-21***');
+                .setTitle('__Realm Cordinates!__')
+                .setDescription('**__Main Landmarks__**\n```Realm World Spawn | -6 ~ 201\nStrong Hold | -1900 ~ -100```\n\n**__Player Homes__**\n```The Rice Farm | -555 ~ -527\nCrackheads hurdle | -692 ~ -549\nTofu | -732 ~ -552\nThe Elysium Farm | -554 ~ -695\nSabia | -166 ~ 510\nVaporwave Sanctuary | -627 ~ -880\nThicky Nickys Strip Club | -1030 ~ -1837\nMEGA Inc. | -338 ~ -2061\nIndustrial Heaven | -300 ~ 3950\nVortex | -702 ~ -4\nDragon Land | -1816 ~ 916\n```\n\n**__Kingdoms__**\n```Elysium | -699 ~ -467\nDragon Kingdom | -1680 ~ 1360\n```\n\n***Last Updated: 01-07-21***');
 
             message.channel.send(RealmsEmbed);
 
