@@ -34,23 +34,27 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
-    } else if (command == 'help'){
+    } else if (command === 'help'){
         client.commands.get('help').execute(message, args);
-    } else if (command == 'creator'){
+    } else if (command === 'creator'){
         client.commands.get('creator').execute(message, args);
-    } else if (command == 'say'){
+    } else if (command === 'say'){
         client.commands.get('say').execute(message, args);
-    } else if (command == 'rules'){
+    } else if (command === 'rules'){
         client.commands.get('rules').execute(message, args);
-    } else if (command == 'invite'){
+    } else if (command === 'invite'){
         client.commands.get('invite').execute(message, args);
-    } else if (command == 'mcrules'){
+    } else if (command === 'mcrules'){
         client.commands.get('mcrules').execute(message, args);
-    } else if (command === 'reactionrole') {
+    } else if (command === 'reactionrole'){
         client.commands.get('reactionrole').execute(message, args, Discord, client);
-    } else if (command == 'clanrules') {
+    } else if (command === 'clanrules'){
         client.commands.get('clanrules').execute(message, args);
-    }
+    } else if (command === 'mute'){
+        client.commands.get('mute').execute(message, args);
+    } else if (command === 'unmute'){
+        client.commands.get('unmute').execute(message, args);
+    } 
 })
 
 client.login(process.env.token);
