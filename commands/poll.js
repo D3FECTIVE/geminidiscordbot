@@ -10,12 +10,14 @@ module.exports = {
         let mChannel = message.mentions.channels.first()
 
         message.delete()
+
+        mChannel.send('@everyone');
+
         let PollEmbed = new Discord.MessageEmbed()
-        .setColor('#00d0ff')
-        .setTitle(argresult)
+        .setColor('#ffffff')
         .setDescription(argresult)
-        mChannel.send('@here');
         let msgEmbed = await mChannel.send(PollEmbed);
+
         await msgEmbed.react('707644906260398190')
         await msgEmbed.react('707644956151513179')
 
