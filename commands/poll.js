@@ -12,7 +12,7 @@ module.exports = {
         message.delete()
         let PollEmbed = new Discord.MessageEmbed()
         .setColor('#00d0ff')
-        .setDescription(argresult)
+        .setTitle(argresult)
         let msgEmbed = await mChannel.send(PollEmbed);
         await msgEmbed.react('707644906260398190')
         await msgEmbed.react('707644956151513179')
