@@ -30,7 +30,7 @@ module.exports = {
             argresult = args.join(" ")
 
             let PollEmbed = new Discord.MessageEmbed()
-            .setColor('#2cff00')
+            .setColor('#75e7bf')
             .setDescription(argresult)
 
             let msgEmbed = await message.channel.send(PollEmbed);
