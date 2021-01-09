@@ -13,6 +13,7 @@ module.exports = {
         let PollEmbed = new Discord.MessageEmbed()
         .setColor('#00d0ff')
         .setTitle(argresult)
+        .setDescription('@here')
         let msgEmbed = await mChannel.send(PollEmbed);
         await msgEmbed.react('707644906260398190')
         await msgEmbed.react('707644956151513179')
