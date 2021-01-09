@@ -4,7 +4,7 @@ module.exports = {
     name: 'clanrules',
     description: "This displays the clan rules!",
     execute(message, args){
-        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You're not authorized to use this command!")
+        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("**You're not authorized to use this command!**")
         
         const ClanRulesEmbed = new Discord.MessageEmbed()
         .setColor('#2cff00')

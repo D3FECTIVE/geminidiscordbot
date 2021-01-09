@@ -4,7 +4,7 @@ module.exports = {
     name: 'say',
     description: "Makes an announcement!",
     execute(message, args){
-        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You're not authorized to use this command!")
+        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("**You're not authorized to use this command!**")
 
         let argresult;
         let mChannel = message.mentions.channels.first()

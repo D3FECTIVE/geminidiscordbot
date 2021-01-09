@@ -4,7 +4,7 @@ module.exports = {
     name: 'mcrules',
     description: "This displays the minecraft realm rules!",
     execute(message, args){
-        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You're not authorized to use this command!")
+        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("**You're not authorized to use this command!**")
 
         const MCRulesEmbed = new Discord.MessageEmbed()
         .setColor('#2cff00')

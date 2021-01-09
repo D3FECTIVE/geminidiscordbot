@@ -2,7 +2,7 @@ module.exports = {
     name: 'unmute',
     description: "This unmutes a member",
     execute(message, args){
-        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You're not authorized to use this command!")
+        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("**You're not authorized to use this command!**")
 
         const target = message.mentions.users.first();
         if(target){
@@ -13,9 +13,9 @@ module.exports = {
 
             memberTarget.roles.remove(muteRole.id);
             memberTarget.roles.add(mainRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> has been unmuted!`);
+            message.channel.send(`**<@${memberTarget.user.id}> has been unmuted!**`);
         } else{
-            message.channel.send('The user specified could not be found!');
+            message.channel.send('**The user specified could not be found!**');
         }
     }
 }
