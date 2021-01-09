@@ -56,6 +56,8 @@ client.on('message', message =>{
         client.commands.get('unmute').execute(message, args);
     } else if (command === 'realm'){
         client.commands.get('realm').execute(message, args);
+    } else if (command === 'poll'){
+        client.commands.get('poll').execute(message, args);
     }
 })
 
