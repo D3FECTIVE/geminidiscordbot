@@ -15,6 +15,7 @@ module.exports = {
         .setColor('#0a0a0a')
         .setDescription('**Invite link: https://discord.gg/w6v2fHg**');
 
+        message.delete()
         message.channel.send(RulesEmbed)
         message.channel.send(HelpEmbed);
     }

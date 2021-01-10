@@ -15,6 +15,7 @@ module.exports = {
         .setColor('#2cff00')
         .setDescription('**Article 5**\nInviting Players\n*-a* Elders and Co Leaders may invite new players to the clan\n*-b* The Player must have a minimum of 1000 trophies in their home village to be allowed in\n*-c* Certain special cases may be allowed if you present it to the Clans Leader\n*-d* When the clan is at war we will not be accepting any new members; this is to prevent clan spying, if any new members are accepted during wartime they will be immediately kicked\n\n***Last Updated: 01-05-21***');
 
+        message.delete()
         message.channel.send(ClanRulesEmbed)
         message.channel.send(ClanRulesExtendedEmbed)
     }
