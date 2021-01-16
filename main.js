@@ -26,41 +26,6 @@ client.on('guildMemberAdd', guildMember =>{
     guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**`)
 });
 
-// Begin of Membership Screening Pending Patch
-
-const { Client, Structures } = require('discord.js');
-
-Structures.extend('GuildMember', GuildMember => {
-    class GuildMemberWithPending extends GuildMember {
-        pending = false;
-    
-        constructor(client, data, guild) {
-            super(client, data, guild);
-            this.pending = data.pending ?? false;
-        }
-    
-        _patch(data) {
-            super._patch(data);
-            this.pending = data.pending ?? false;
-        }
-    }
-    return GuildMemberWithPending;
-});
-
-const client = new Client();
-
-client.on('guildMemberUpdate', async (oldMember, newMember) => {
-    // Member passed membership screening
-    if (oldMember.pending && !newMember.pending) {
-        const role = newMember.guild.roles.cache.find(role => role.name.toLowerCase() === 'member');
-        if (role) {
-            await newMember.roles.add(role);
-        }
-    }
-});
-
-// End of patch
-
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
