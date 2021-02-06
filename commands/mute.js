@@ -15,12 +15,12 @@ module.exports = {
             if(!args[1]){
                 memberTarget.roles.remove(mainRole.id);
                 memberTarget.roles.add(muteRole.id);
-                message.channel.send(`**<@${memberTarget.user.id}> has been muted!**`);
+                message.channel.send(`:mute: **<@${memberTarget.user.id}> has been muted!**`);
                 return
             }
             memberTarget.roles.remove(mainRole.id);
             memberTarget.roles.add(muteRole.id);
-            message.channel.send(`**<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}**`);
+            message.channel.send(`:speaker: **<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}**`);
 
             setTimeout(function(){
                 memberTarget.roles.remove(muteRole.id);
