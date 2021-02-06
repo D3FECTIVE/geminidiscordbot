@@ -20,14 +20,14 @@ module.exports = {
             }
             memberTarget.roles.remove(mainRole.id);
             memberTarget.roles.add(muteRole.id);
-            message.channel.send(`:speaker: **<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}**`);
+            message.channel.send(`:mute: **<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}**`);
 
             setTimeout(function(){
                 memberTarget.roles.remove(muteRole.id);
                 memberTarget.roles.add(mainRole.id);
             }, ms(args[1]));
         } else{
-            message.channel.send('**The user specified could not be found!**');
+            message.channel.send(':VoteNo: **The user specified could not be found!**');
         }
     }
 }
