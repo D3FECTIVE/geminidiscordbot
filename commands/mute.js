@@ -27,7 +27,7 @@ module.exports = {
                 memberTarget.roles.add(mainRole.id);
             }, ms(args[1]));
         } else{
-            message.channel.send(':VoteNo: **The user specified could not be found!**');
+            message.channel.send('<:VoteNo:707644956151513179> **The user specified could not be found!**');
         }
     }
 }

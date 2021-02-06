@@ -15,7 +15,7 @@ module.exports = {
             memberTarget.roles.add(mainRole.id);
             message.channel.send(`:speaker: **<@${memberTarget.user.id}> has been unmuted!**`);
         } else{
-            message.channel.send('**The user specified could not be found!**');
+            message.channel.send('<:VoteNo:707644956151513179> **The user specified could not be found!**');
         }
     }
 }
