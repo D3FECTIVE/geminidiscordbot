@@ -64,7 +64,7 @@ module.exports = {
         .setColor('#2cff00')
         .setTitle('**__Rule 10__**')
         .setDescription('**Discord Terms of Service applies to this server.**')
-        .setFooter.addFeild('More details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
+        .addFeild('More details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
 
         const InviteEmbed = new Discord.MessageEmbed()
         .setColor('#0a0a0a')
