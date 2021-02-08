@@ -24,17 +24,17 @@ module.exports = {
         const RulesEmbed4 = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Rule 4__**')
-        .setDescription('**No self-promotions or advertisements.**\n\nThis server is not a sales platform or a hub for other servers. Advertising, whether through DMs, chat, or images is prohibited. In-direct advertising which does not include an invite link is also prohibited.');
+        .setDescription('**No self-promotions or advertisements.**\n\nThis server is not a sales platform or a hub for other servers. Advertising, whether through DMs, chat, or images is prohibited. In-direct advertising which does not include an invite link is also prohibited. This does not include sharing videos.');
 
         const RulesEmbed5 = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Rule 5__**')
-        .setDescription('**No political or religious topics.**\n\nNo controversial content allowed.');
+        .setDescription('**No political or religious topics.**\n\nNo controversial content allowed. If caught discussing such topics you will receive a mute, and a ban if continued. If you feel like anyone is breaking this rule then please create a support ticket by DM the Staff Mailbox bot. Please have screenshots and the users Discord tag ready.');
 
         const RulesEmbed6 = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Rule 6__**')
-        .setDescription('**Do not @mention or DM staff.**\n\nThis includes begging for a role or in game currencies. If you wanna report a user DM the Staff Mailbox to open a support ticket.');
+        .setDescription('**Do not @mention or DM staff.**\n\nThis includes begging for a role or in game currencies. If you wanna report a user, DM the Staff Mailbox to open a support ticket.');
 
         const RulesEmbed7 = new Discord.MessageEmbed()
         .setColor('#2cff00')
@@ -54,7 +54,7 @@ module.exports = {
         const RulesEmbed10 = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Rule 10__**')
-        .setDescription('**Discord Terms of Service applies to this server.**\n\nMore details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
+        .setDescription('**Discord Terms of Service applies to this server.**\n\nMore details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct). You will be held accountable for any and all actions performed on your account.');
 
         const InviteEmbed = new Discord.MessageEmbed()
         .setColor('#0a0a0a')
