@@ -8,8 +8,8 @@ module.exports = {
         
         const RulesEmbed1 = new Discord.MessageEmbed()
         .setColor('#2cff00')
-        .setTitle('**__Rule 1__**\n**1. Use English only.**')
-        .setDescription('**1. Use English only.**\nEnglish is the primary language of this server, no using languages other than English.');
+        .setTitle('**__Rule 1__**')
+        .setDescription('**1. Use English only.**\n\nEnglish is the primary language of this server, no using languages other than English.');
 
         const RulesEmbed2 = new Discord.MessageEmbed()
         .setColor('#2cff00')
@@ -62,8 +62,8 @@ module.exports = {
         const RulesEmbed10 = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Rule 10__**')
-        .setDescription('**Discord Terms of Service applies to this server.**\nMore details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
-        
+        .setDescription('**Discord Terms of Service applies to this server.**\n\nMore details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
+
         const InviteEmbed = new Discord.MessageEmbed()
         .setColor('#0a0a0a')
         .setDescription('**Invite link: https://discord.gg/w6v2fHg**');
