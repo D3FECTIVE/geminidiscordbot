@@ -10,7 +10,7 @@ module.exports = {
         .setColor('#2cff00')
         .setTitle('**__Rule 1__**')
         .setDescription('**1. Use English only.**')
-        .setFooter('English is the primary language of this server, no using languages other than English.');
+        .setDescription('English is the primary language of this server, no using languages other than English.');
 
         const RulesEmbed2 = new Discord.MessageEmbed()
         .setColor('#2cff00')
@@ -64,7 +64,7 @@ module.exports = {
         .setColor('#2cff00')
         .setTitle('**__Rule 10__**')
         .setDescription('**Discord Terms of Service applies to this server.** [test](https://discord.com/terms)')
-        .setFooter('More details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
+        .setDescription('More details are available at [Discord Terms](https://discord.com/terms) & [Services](https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct).');
 
         const InviteEmbed = new Discord.MessageEmbed()
         .setColor('#0a0a0a')
