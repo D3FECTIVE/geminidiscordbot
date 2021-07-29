@@ -9,7 +9,7 @@ module.exports = {
             const AFKRealmEmbed = new Discord.MessageEmbed()
                 .setColor('#1a6111')
                 .setTitle("__Alex's Farming Kingdom Cordinates!__")
-                .setDescription("\n```AFK001 [Guardian Farm] Alex's Farming Kingdom Outpost Guardian\n~ ~ ~\n\nAFK002 [Witch Farm] Alex's Farming Kingdom Swamp Outpost\n-2320 ~ -2496\n\n```\n***Last Updated: 07-28-21***");
+                .setDescription("\n```AFK001 [Guardian Farm] Alex's Farming Kingdom Outpost Guardian\n720 ~ -1711\n\nAFK002 [Witch Farm] Alex's Farming Kingdom Swamp Outpost\n-1389 ~ -2379\n\n```\n***Last Updated: 07-28-21***");
 
             message.channel.send(AFKRealmEmbed);
 
