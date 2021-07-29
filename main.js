@@ -61,7 +61,7 @@ client.on('message', message =>{
     } else if (command === 'rulesbanner'){
         client.commands.get('rulesbanner').execute(message, args);
     } else if (command === 'afk'){
-        client.commands.get('afk').execute(maessage, args);
+        client.commands.get('afk').execute(message, args);
     }
 })
 
