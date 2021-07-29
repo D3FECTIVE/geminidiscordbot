@@ -7,9 +7,9 @@ module.exports = {
         if (message.member.roles.cache.has('768625337952501785')){
 
             const AFKRealmEmbed = new Discord.MessageEmbed()
-                .setColor('#00d0ff')
+                .setColor('#1a6111')
                 .setTitle("__Alex's Farming Kingdom Cordinates!__")
-                .setDescription("\n```AFK001 [Guardian Farm] Alex's Farming Kingdom Outpost Guardian | \nAFK002 [Witch Farm] Alex's Farming Kingdom Swamp Outpost | -2320 ~ -2496\n```\n\n***Last Updated: 07-28-21***");
+                .setDescription("\n```AFK001 [Guardian Farm] Alex's Farming Kingdom Outpost Guardian\n~ ~ ~\n\nAFK002 [Witch Farm] Alex's Farming Kingdom Swamp Outpost\n-2320 ~ -2496\n\n```\n***Last Updated: 07-28-21***");
 
             message.channel.send(AFKRealmEmbed);
 
