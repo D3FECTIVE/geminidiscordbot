@@ -14,7 +14,7 @@ module.exports = {
             message.channel.send(RealmsEmbed);
 
         } else {
-            message.channel.send('**You are not an authorized member of the Project GEMiИi Realm!**');
+            message.channel.send('**You are not an authorized member of the Project GEMiИi World Minecraft Realm!**');
         }
     }
 }

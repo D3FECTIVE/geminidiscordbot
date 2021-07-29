@@ -6,6 +6,8 @@ module.exports = {
     execute(message, args){
         if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("**You're not authorized to use this command!**")
         
+        const RulesBanner = new Discord.MessageAttachment('https://cdn.discordapp.com/attachments/489536008501854208/808192956346662932/welcome.png');
+
         const RulesEmbed1 = new Discord.MessageEmbed()
         .setColor('#2cff00')
         .setTitle('**__Rule 1__**')
@@ -61,6 +63,10 @@ module.exports = {
         .setDescription('**Invite link: https://discord.gg/w6v2fHg**');
 
         message.delete()
+        message.channel.send(RulesBanner)
+        
+        wait(5)
+
         message.channel.send(RulesEmbed1)
         message.channel.send(RulesEmbed2)
         message.channel.send(RulesEmbed3)
