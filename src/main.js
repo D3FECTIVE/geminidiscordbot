@@ -4,7 +4,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 client.commands = new Collection();
 
-//require('dotenv').config();
+require('dotenv').config();
 
 const prefix = 'g.';
 
