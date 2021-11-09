@@ -1,15 +1,10 @@
 // New Code
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
-require('dotenv').config();
 
-client.on('ready', () => {
+client.once('ready', () => {
     console.log('Gemini is online!');
 });
-
-(async () => {
-    client.login(process.env.token);
-})();
 
 /*
 Old Code
@@ -107,4 +102,4 @@ client.on('message', message =>{
 })
 */
 
-//client.login(process.env.token);
+client.login(process.env.token);
