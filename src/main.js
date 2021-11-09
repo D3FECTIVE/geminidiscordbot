@@ -4,6 +4,8 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 client.commands = new Collection();
 
+//require('dotenv').config();
+
 const prefix = 'g.';
 
 const functions = fs.readdirSync("./src/functions").filter(file => file.endsWith(".js"));
