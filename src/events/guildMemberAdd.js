@@ -1,4 +1,4 @@
-const event = require("../functions/handleEvents.js");
+const Event = require("../functions/handleEvents.js");
 
 module.exports = new Event("guildMemberAdd", (client,member) => {
 
