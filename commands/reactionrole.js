@@ -1,3 +1,4 @@
+/*
 module.exports = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
@@ -12,3 +13,4 @@ module.exports = {
 
     }
 }
+*/

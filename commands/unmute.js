@@ -1,3 +1,4 @@
+/*
 module.exports = {
     name: 'unmute',
     description: "This unmutes a member",
@@ -19,3 +20,4 @@ module.exports = {
         }
     }
 }
+*/

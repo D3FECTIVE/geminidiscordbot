@@ -1,3 +1,4 @@
+/*
 module.exports = {
     name: 'ping',
     description: "this is a ping command!",
@@ -5,3 +6,4 @@ module.exports = {
         message.channel.send('pong!');
     }
 }
+*/

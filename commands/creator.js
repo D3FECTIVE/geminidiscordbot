@@ -1,3 +1,4 @@
+/*
 module.exports = {
     name: 'creator',
     description: "this tells alex that he is great!",
@@ -5,3 +6,4 @@ module.exports = {
         message.channel.send('**Senpai @AlexPlayzxx Created Me.**');
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 const ms = require('ms');
 module.exports = {
     name: 'mute',
@@ -31,3 +32,4 @@ module.exports = {
         }
     }
 }
+*/
