@@ -1,6 +1,6 @@
 const { Client, Intents, Collection } = require('discord.js');
 const fs = require('fs');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS] });
 
 client.commands = new Collection();
 
@@ -13,13 +13,8 @@ const eventFiles = fs.readdirSync("./src/events").filter(file => file.endsWith("
 const commandFolders = fs.readdirSync("./src/commands");
 
 // Welcome Message
-client.on('guildMemberAdd', guildMember =>{
-    // Auto Role
-    //let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Gamer')
-    // guildMember.role.add(welcomeRole);
-
-    //Welcome Message Sender
-    guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**`)
+client.on('guildMemberAdd', guildMember => {
+    guildMember.guild.channels.cache.get('474431129613762571').send({ content: `**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**` });
 });
 
 (async () => {

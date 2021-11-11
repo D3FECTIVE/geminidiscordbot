@@ -7,13 +7,15 @@ module.exports = new Event("guildMemberAdd", (client,member) => {
     const channel = member.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**`);
 
 });
-
-
-
-client.on('guildMemberAdd', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Gamer');
-
+*/
+/*
+// Welcome Message
+client.on('guildMemberAdd', guildMember => {
+    // Auto Role
+    //let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Gamer')
     // guildMember.role.add(welcomeRole);
-    guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**`);
+
+    //Welcome Message Sender
+    guildMember.guild.channels.cache.get('474431129613762571').send(`**Welcome to the Project GEMiИi discord server, <@${guildMember.user.id}>!**`)
 });
 */
