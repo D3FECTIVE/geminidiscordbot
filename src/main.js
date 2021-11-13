@@ -23,4 +23,5 @@ client.on('guildMemberAdd', guildMember => {
     client.handleEvents(eventFiles, "./src/events");
     client.handleCommands(commandFolders, "./src/commands");
     client.login(process.env.token);
+    client.dbLogin();
 })();
