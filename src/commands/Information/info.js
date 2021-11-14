@@ -13,7 +13,7 @@ module.exports = {
             subcommand
                 .setName('server')
                 .setDescription("Member Count")),
-	async execute(interaction) {
+	async execute(interaction, client) {
 		if (interaction.options.getSubcommand() === "user") {
             const user = interaction.options.getUser("target");
             if (user) {
