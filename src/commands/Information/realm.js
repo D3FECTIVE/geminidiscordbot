@@ -10,7 +10,14 @@ module.exports = {
         const RealmsEmbed = new MessageEmbed()
             .setColor('#00d0ff')
             .setTitle('__Realm Cordinates!__')
-            .setDescription('**SEED 6113077598386945255**\n\n**__Main Landmarks__**\n```Realm World Spawn | -6 ~ 201\nStrong Hold | -1900 ~ -100```\n\n**__Player Homes__**\n```The Rice Farm | -555 ~ -527\nCrackheads hurdle | -692 ~ -549\nTofu | -732 ~ -552\nThe Elysium Farm | -554 ~ -695\nSabia | -166 ~ 510\nVaporwave Sanctuary | -627 ~ -880\nThicky Nickys Strip Club | -1030 ~ -1837\nMEGA Inc. | -338 ~ -2061\nIndustrial Heaven | -300 ~ 3950\nVortex | -702 ~ -4\nDragon Land | -1816 ~ 916\n```\n\n**__Kingdoms__**\n```Elysium | -699 ~ -467\nDragon Kingdom | -1680 ~ 1360\n```\n\n***Last Updated: 07-28-21***');
+            .setDescription('**SEED 6113077598386945255**\n\n**__Main Landmarks__**\n```Realm World Spawn | -6 ~ 201\nStrong Hold | -1900 ~ -100```\n\n**__Player Homes__**\n```The Rice Farm | -555 ~ -527\nCrackheads hurdle | -692 ~ -549\nTofu | -732 ~ -552\nThe Elysium Farm | -554 ~ -695\nSabia | -166 ~ 510\nVaporwave Sanctuary | -627 ~ -880\nThicky Nickys Strip Club | -1030 ~ -1837\nMEGA Inc. | -338 ~ -2061\nIndustrial Heaven | -300 ~ 3950\nVortex | -702 ~ -4\nDragon Land | -1816 ~ 916\n```\n\n**__Kingdoms__**\n```Elysium | -699 ~ -467\nDragon Kingdom | -1680 ~ 1360\n```\n\n***Last Updated: 07-28-21***')
+            /*
+            .addFields(
+                { name: `Main Landmarks`, value: 'Realm World Spawn | -6 ~ 201', inline: true},
+                { name: `Player Homes`, value: 'The Rice Farm | -555 ~ -527', inline: true},
+                { name: `Kingdoms`, value: 'Elysium | -699 ~ -467', inline: true}
+            );
+            */
 
         await interaction.reply({ embeds: [RealmsEmbed] });
     },
